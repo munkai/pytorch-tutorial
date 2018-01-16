@@ -1,0 +1,40 @@
+MANIFEST
+node_modules
+*.py[co]
+*.egg-info
+*.bak
+.ipynb_checkpoints
+.tox
+.coverage
+
+*.map
+.idea/
+
+/.project
+/.pydevproject
+
+build/
+dist/
+**/__pycache__
+**/*.pyc
+**/*.so*
+**/*.dylib*
+
+# IPython notebook checkpoints
+.ipynb_checkpoints
+
+# Editor temporaries
+*.swn
+*.swo
+*.swp
+*~
+
+# macOS dir files
+.DS_Store
+
+# Ninja files
+.ninja_deps
+.ninja_log
+compile_commands.json
+
+**/data
