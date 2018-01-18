@@ -13,3 +13,17 @@ Amongst are
 Prerequisites for these tutorials are understanding of linear algebra and python.
 
 **Estimated time for completion** 2 months
+
+# Docker
+
+## Build image
+
+```
+docker build -t munk/pytorch -f Dockerfile .
+```
+
+## Start container
+
+```
+docker run -it -p 8888:8888 -v `pwd`:/work munk/pytorch bash
+```
