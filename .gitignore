@@ -38,3 +38,5 @@ dist/
 compile_commands.json
 
 **/data
+
+**/*.npz
