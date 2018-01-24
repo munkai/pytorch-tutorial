@@ -38,5 +38,9 @@ dist/
 compile_commands.json
 
 **/data
-
 **/*.npz
+**/*.png
+**/.data
+**/.vector_cache
+**/*.zip
+**/*.vec
