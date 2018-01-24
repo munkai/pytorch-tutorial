@@ -10,6 +10,7 @@ RUN conda install -y -c soumith magma-cuda80
 RUN apt-get update -y && \
 		apt-get install -y --no-install-recommends \
 			git \
+      wget \
       build-essential \
 		&& \
 		apt-get clean && \
@@ -19,7 +20,7 @@ RUN git clone --recursive https://github.com/pytorch/pytorch /tmp/pytorch
 RUN cd /tmp/pytorch && python setup.py install
 
 RUN conda install -y torchvision -c pytorch
-RUN conda install -y jupyter matplotlib
+RUN conda install -y jupyter matplotlib scikit-learn
 
 WORKDIR /work
 CMD ["bash"]
