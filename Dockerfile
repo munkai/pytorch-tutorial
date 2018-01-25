@@ -22,7 +22,7 @@ RUN python /tmp/pytorch/setup.py install
 RUN pip install https://github.com/pytorch/text/archive/master.zip
 
 RUN conda install -y torchvision -c pytorch
-RUN conda install -y jupyter matplotlib scikit-learn nltk
+RUN conda install -y jupyter matplotlib scikit-learn nltk bokeh
 
 WORKDIR /work
 CMD ["bash"]
