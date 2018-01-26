@@ -5,7 +5,7 @@ ENV LANG=C.UTF-8 \
 
 RUN export CMAKE_PREFIX_PATH="$(dirname $(which conda))/../"
 RUN conda install -y numpy pyyaml mkl setuptools cmake cffi
-RUN conda install -y -c soumith magma-cuda80
+RUN conda install -y -c pytorch magma-cuda80
 
 RUN apt-get update -y && \
 		apt-get install -y --no-install-recommends \
@@ -17,7 +17,7 @@ RUN apt-get update -y && \
 		rm -rf /var/lib/apt/lists/*
 
 RUN git clone --recursive https://github.com/pytorch/pytorch /tmp/pytorch
-RUN python /tmp/pytorch/setup.py install
+RUN cd /tmp/pytorch/ && python setup.py install
 
 RUN pip install https://github.com/pytorch/text/archive/master.zip
 
