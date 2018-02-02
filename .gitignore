@@ -38,10 +38,13 @@ dist/
 compile_commands.json
 
 **/data
+**/images
 **/*.npz
 **/*.png
+**/*.[jJ][pP]*[eE][gG]
 **/.data
 **/.vector_cache
 **/*.zip
 **/*.vec
 **/*.pt
+**/*.csv
