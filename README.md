@@ -25,7 +25,7 @@ docker build -t munkai/pytorch:cpu -f Dockerfile.cpu .
 ## Start container
 
 ```
-docker run -it -p 8888:8888 -v `pwd`:/work munkai/pytorch:cpu bash
+docker run -it -p 8888:8888 -v `pwd`:/work munkai/pytorch:cpu ./jupyter_run.sh
 ```
 
 ## with CUDA
@@ -34,5 +34,5 @@ You need nvidia and cuda drivers installed along with `nvidia-docker`.
 Also, build the image from the `Dockerfile.gpu`.
 
 ```
-nvidia-docker run -it -p 8888:8888 -v `pwd`:/work munkai/pytorch:gpu bash
+nvidia-docker run -it -p 8888:8888 -v `pwd`:/work munkai/pytorch:gpu ./jupyter_run.sh
 ```
