@@ -18,8 +18,18 @@ Prerequisites for these tutorials are understanding of linear algebra and python
 
 ## Build image
 
+### CPU
+
 ```
 docker build -t munkai/pytorch:cpu -f Dockerfile.cpu .
+```
+
+### GPU
+
+Also available on dockerhub, so simply use the run command to fetch remote version.
+
+```
+docker build -t munkai/pytorch:gpu -f Dockerfile.gpu .
 ```
 
 ## Start container
@@ -28,11 +38,28 @@ docker build -t munkai/pytorch:cpu -f Dockerfile.cpu .
 docker run -it -p 8888:8888 -v `pwd`:/work munkai/pytorch:cpu ./jupyter_run.sh
 ```
 
-## with CUDA
+## Running docker with a CUDA-enabled machine
 
-You need nvidia and cuda drivers installed along with `nvidia-docker`.
-Also, build the image from the `Dockerfile.gpu`.
+You need Nvidia and nvidia-docker installed for this.
 
 ```
 nvidia-docker run -it -p 8888:8888 -v `pwd`:/work munkai/pytorch:gpu ./jupyter_run.sh
 ```
+
+### Install Nvidia
+
+Make sure you have Nvidia's drivers installed for your system.
+Following is install instructions for ubuntu 16.04
+
+```
+DISTRO=ubuntu
+VERSION=1604
+ARCH=x86_64
+sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/${DISTRO}${VERSION}/${ARCH}/7fa2af80.pub
+sudo sh -c 'echo "deb http://developer.download.nvidia.com/compute/cuda/repos/${DISTRO}${VERSION}/${ARCH}/" > /etc/apt/sources.list.d/cuda.list'
+sudo apt-get update && sudo apt-get install -y --no-install-recommends cuda-drivers
+```
+
+### Install nvidia-docker
+
+See https://github.com/NVIDIA/nvidia-docker on how to install `nvidia-docker`.
