@@ -16,6 +16,8 @@ Prerequisites for these tutorials are understanding of linear algebra and python
 
 # Docker
 
+See https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce on how to install `docker`.
+
 ## Build image
 
 ### CPU
