@@ -1,20 +1,16 @@
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-import glob
-import datetime
+import os
+
 from skimage.io import imread
 from skimage.transform import resize
 from sklearn.preprocessing import LabelEncoder
-import warnings
 
+import warnings
 with warnings.catch_warnings():
     warnings.filterwarnings("ignore", category=DeprecationWarning)
     from sklearn.cross_validation import StratifiedShuffleSplit
 
-import os
-import subprocess
-import itertools
 
 def onehot(t, num_classes):
     out = np.zeros((t.shape[0], num_classes))
