@@ -1,20 +1,52 @@
-# Credits
+# Most complete PyTorch and NLP tutorial in existence
 
-This repo is a collection or translation of popular deep learning projects and tutorials.
+This repo is a remix of the most popular online courses starting from applied deep learning and increasingly moving into more theoretical content with a pytorch translation of Stanford NLP's CS224d 2017 course.
+This course is a natural extension of fast.ai's 2018 deep learning tutorial.
+Lastly, the tutorial encompasses the AllenNLP library for building advanced deep learning systems and researching in NLP.
 
-Amongst are
+Amongst courses where content is remixed are
 
 - [PyTorch Tutorial](https://github.com/pytorch/tutorials)
 - [Technical University of Denmark's Deep Learning tutorial](https://github.com/DeepLearningDTU/02456-deep-learning)
 - [Stanford's CS224 Deep Learning for NLP](http://cs224d.stanford.edu/)
 
+**Estimated time for completion of all content, given prerequisites are satisfied** 2 months (full time).
+
 # Prerequisites
 
 Prerequisites for these tutorials are understanding of linear algebra and python.
+If you do not understand linear algegbra, we recommend either
 
-**Estimated time for completion** 2 months
+## Linear Algebra
+
+1. Crash course (often sufficient for engineers)
+   - Andrew Ng's [linear algebra crash course](https://www.coursera.org/learn/machine-learning/lecture/38jIT/matrices-and-vectors).
+   Watch all the videos, which should be around an hour total.
+2. Thorough introduction (recommended for researchers)
+   - [Khan Academy's Precalculus](https://www.khanacademy.org/math/precalculus)
+     - note, if you do not have prerequisites for the precalculus, you can start from scratch with Khan Academy
+   - [Single Variable Calculus](https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/)
+   - [Multivariable Calculus](https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/)
+   - [Linear Algebra](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/)
+
+Going through the thorough introduction to linear algebra from scratch is about 2 months (full time).
+The crash course should take about 1 day to complete.
+
+## Python
+
+1. Crash course
+   - https://learnxinyminutes.com/docs/python3/
+   - https://www.codecademy.com/learn/learn-python
+2. Thorough introduction
+   - [Introduction to Computer Science and Programming in Python](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/)
+   - [Introduction to Algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/)
+
+Going through the thorough introduction to computer science from scratch is about 1 month (full time).
+The crash course should take about 1 day to complete.
 
 # Docker
+
+To run the labs we will use Docker, which is ellaborated below.
 
 See https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce on how to install `docker`.
 
@@ -28,7 +60,7 @@ docker build -t munkai/pytorch:cpu -f Dockerfile.cpu .
 
 ### GPU
 
-Also available on dockerhub, so simply use the run command to fetch remote version.
+Also available on dockerhub, so simply use the `docker run` command to fetch remote version.
 
 ```
 docker build -t munkai/pytorch:gpu -f Dockerfile.gpu .

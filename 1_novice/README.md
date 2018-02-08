@@ -21,17 +21,16 @@ An introduction to automatic differentiation in PyTorch.
 
 An introduction to building a simple neural network with PyTorch.
 
+### Reading material
+
+Requires fundamental understanding of regression, classification, and neural networks.
+If needed then check out week 1 through 6 in [Andrew Ng's machine learning course](https://www.coursera.org/learn/machine-learning).
+
 ## Lab 3: 3-cifar10
 
 An introduction to data loading, image classification, and training with PyTorch.
 
-# Prerequisites
+### Reading material
 
-Lab 0 and 1 require understanding of Linear Algebra.
-If the recipient does not have this understanding, then checkout [Andrew Ng's linear algebra review](https://www.coursera.org/learn/machine-learning/lecture/38jIT/matrices-and-vectors).
-
-Lab 2 requires fundamental understanding of regression, classification, and neural networks.
-If the recipient does not have this understanding, then checkout week 1 through 6 in [Andrew Ng's machine learning course](https://www.coursera.org/learn/machine-learning).
-
-Lab 3 requires understanding of convolutional neural networks.
-If the recipient does not have this understanding, then checkout [Stanford's cs231 lecture 6](https://www.youtube.com/watch?v=bNb2fEVKeEo&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv).
+Requires understanding of convolutional neural networks.
+If needed then check out [Stanford's cs231 lecture 6](https://www.youtube.com/watch?v=bNb2fEVKeEo&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv).
