@@ -98,7 +98,7 @@ Test your newly acquired skills on the most notorious classification challenges:
 
 - Stanford Natural Language Inference (SNLI), [Bowman et al.](https://nlp.stanford.edu/pubs/snli_paper.pdf)
 - [Rocktäschel et al.](https://arxiv.org/abs/1509.06664)
-- [McCann et al.](https://arxiv.org/abs/1708.00107) (bleeding edge research, advanced reading material, focus on the BCN model in section 3)
+- [McCann et al.](https://arxiv.org/abs/1708.00107) (bleeding edge research, advanced reading material, focus on the BCN model in section five)
 
 ### 6.1-final_exam_SNLI
 
